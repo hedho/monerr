@@ -1,25 +1,32 @@
-name: Deploy
+name: github pages
 
 on:
-  push: # Build on all pushes but only deploy for main branch
-  workflow_dispatch: # Allow this task to be manually started (you'll never know)
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
 
 jobs:
   deploy:
-    name: Run deploy
-    runs-on: ubuntu-latest
-    if: github.event_name != 'push' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-20.04
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Build site
-        uses: ./.github/actions/build_site
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          # extended: true
 
-      - name: Deploy site
-        uses: ./.github/actions/deploy_site
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

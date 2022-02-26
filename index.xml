@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Relearn Theme</title>
+    <link>https://hedho.github.io/monerr/</link>
+    <description>Recent content on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://hedho.github.io/monerr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basics</title>
+      <link>https://hedho.github.io/monerr/basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hedho.github.io/monerr/basics/</guid>
+      <description>Chapter 1 Basics Discover what this Hugo theme is all about and the core-concepts behind it.</description>
+    </item>
+    <item>
+      <title>Content</title>
+      <link>https://hedho.github.io/monerr/cont/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hedho.github.io/monerr/cont/</guid>
+      <description>Chapter 2 Content Find out how to create and organize your content quickly and intuitively.</description>
+    </item>
+    <item>
+      <title>Shortcodes</title>
+      <link>https://hedho.github.io/monerr/shortcodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hedho.github.io/monerr/shortcodes/</guid>
+      <description>Chapter 3 Shortcodes Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well. You could use pure HTML to expand possibilities.
+But this happens to be a bad idea. Everyone uses Markdown because it&amp;rsquo;s pure and simple to read even non-rendered. You should avoid HTML to keep it as simple as possible.
+To avoid this limitations, Hugo created shortcodes. A shortcode is a simple snippet inside a page.</description>
+    </item>
+    <item>
+      <title>This could be yours</title>
+      <link>https://hedho.github.io/monerr/yours/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hedho.github.io/monerr/yours/</guid>
+      <description>Chapter 4 This could be yours Start your success story. Now!</description>
+    </item>
+    <item>
+      <title>Tests</title>
+      <link>https://hedho.github.io/monerr/tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hedho.github.io/monerr/tests/</guid>
+      <description>Chapter 5 Tests Some pages for internal testing of differnt styles
+Code Some testing for different styles used in syntax highlightning and preformatted blocks. Inline Code This is some very long inline code. Where does it wrap? What about wrapping short inline code if multiple sections are written side by side? What about wrapping short inline code if multiple sections are written side/by/side? What about wrapping long inline code if multiple sections are written side567 by34567 side567?</description>
+    </item>
+  </channel>
+</rss>
